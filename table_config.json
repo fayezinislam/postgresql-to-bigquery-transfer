@@ -1,0 +1,10 @@
+{
+    "table_config": [
+        {
+            "table": "reporting.fills",
+            "partition_type": "DAY",
+            "partition_column": "created_at",
+            "clustering_columns": "created_at,account_id"
+        }
+    ]
+}
