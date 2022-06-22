@@ -4,7 +4,8 @@ The postgresql-to-bigquery-transfer adapter provides an easy way to sync postgre
 ## Before you begin
 - [Select or create a Cloud Platform project](https://console.cloud.google.com/project?_ga=2.220968858.3275545.1654003980-1401993212.1652797137).
 - [Enable billing for your project](https://support.google.com/cloud/answer/6293499#enable-billing).
-- [Enable the Google Cloud Data Catalog API](https://console.cloud.google.com/flows/enableapi?apiid=pubsub.googleapis.com&_ga=2.212587670.3275545.1654003980-1401993212.1652797137).
+- [Enable the Google Cloud Data Catalog API](https://console.cloud.google.com/flows/enableapi?apiid=datacatalog.googleapis.com).
+- [Enable the Google Cloud BigQuery API](https://console.cloud.google.com/flows/enableapi?apiid=bigquery&_ga=2.78517780.1418766229.1655832390-504257537.1655302631).
 - [Set up authentication with a service account so you can access the API from your local workstation](https://cloud.google.com/docs/authentication/getting-started).
 - [Install and setup Data Catalog Connector for PostgreSQL](https://github.com/GoogleCloudPlatform/datacatalog-connectors-rdbms/tree/master/google-datacatalog-postgresql-connector).
 
