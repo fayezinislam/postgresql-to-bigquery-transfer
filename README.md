@@ -30,6 +30,7 @@ virtualenv <your-env>
 
 ## Required libraries
 ```
+pip install google-cloud
 pip install google-cloud-bigquery
 pip install google-cloud-datacatalog
 pip install numpy
@@ -37,7 +38,6 @@ pip install pandas
 pip install pg8000
 pip install protobuf
 pip install psycopg2
-pip install psycopg2_binary
 pip install SQLAlchemy
 ```
 
