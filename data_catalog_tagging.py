@@ -466,14 +466,15 @@ def get_bigquery_table(project_id, dataset_id, table_id):
 
 #Run program
 def main():
-    project_id = "ftx-streaming-demo"
-    location = "us-east4"
-    entry_group_id = "postgresql"
-    metadata_template_id = "postgresql_table_metadata"
+    project_id = os.environ.get('PROJECT_ID') #"ftx-streaming-demo"
+    location = os.environ.get('LOCATION') #"us-east4"
+    entry_group_id = os.environ.get('SYSTEM') #"postgresql"
+    metadata_template_id = os.environ.get('METADATA_TEMPLATE_ID') # "postgresql_table_metadata"
     entry_id = "reporting_fills"
-    tag_template_id = "data_replication_tags"
-    bq_location = "us-east4"
+    tag_template_id = os.environ.get('TAG_TEMPLATE_ID') #"data_replication_tags"
+    bq_location = os.environ.get('LOCATION') #"us-east4"
 
+    
     # Tag source tables
     tag_entry_group(project_id, location, tag_template_id, entry_group_id, metadata_template_id)
 
